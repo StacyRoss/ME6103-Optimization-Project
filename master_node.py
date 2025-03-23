@@ -5,8 +5,6 @@ from firebase_admin import credentials, initialize_app, db
 from ax.service.ax_client import AxClient, ObjectiveProperties
 from ax.exceptions.generation_strategy import MaxParallelismReachedException
 
-logging.getLogger('ax').setLevel(logging.ERROR)
-
 F_slosh_max = 0
 V_baffle_max = 0
 
