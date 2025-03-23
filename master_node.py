@@ -1,12 +1,9 @@
 import sys
 import time
-import logging
 
 from firebase_admin import credentials, initialize_app, db
 from ax.service.ax_client import AxClient, ObjectiveProperties
 from ax.exceptions.generation_strategy import MaxParallelismReachedException
-
-from master_node_utils import *
 
 logging.getLogger('ax').setLevel(logging.ERROR)
 
